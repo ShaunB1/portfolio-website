@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 40px;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 30px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #1a2238;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #ff6a3d;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.intro .name {
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.intro .role {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.intro .desc {
+    margin-top: 20px;
+    width: 50vw;
+    text-align: center;
+    font-size: 18px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.moon {
+    position: absolute;
+}
+
+.sun {
+    position: absolute;
+}
+
+html, body {
+    background: #0C1220;
+}
+
+#container {
+    height: 5000px;
+}
+
+.toggle-right {
+    animation: slideRight 0.5s forwards;
+}
+
+.toggle-left {
+    animation: slideLeft 0.5s forwards;
+}
+
+.nav-top {
+    top: 20px;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 835px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.floating {
+    position: sticky;
+    top: 25px;
+    border: 1px solid gray;
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(23, 21, 41, 0.5);
+    padding: 25px 0;
+    animation: fadeIn 0.1s ease-out forwards;
+    z-index: 1;
+}
+
+.nav-tp {
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    opacity: 0.5;
+}
+
+.nav-br {
+    color: orange;
+    font-size: 16px;
+    font-weight: 1000;
+    letter-spacing: 4px;
+}
+
+a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    width: 60px;
+    height: 30px;
+    border-radius: 40px;
+    font-size: 12px;;
+}
+
+.socials {
+   height: 400px;
+   border-right: 2px solid #CCCCFF;
+   position: absolute;
+}
+
+.shadow {
+    box-shadow: 0px 0px 20px 0.25px black;
+}
